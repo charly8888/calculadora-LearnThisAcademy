@@ -1,3 +1,6 @@
-import { printHello } from '#Lib/hello.js';
+import { promptQuestion } from '#Lib/promptQuestion.js';
 
-printHello();
+(async () => {
+    const userAnswer = await promptQuestion('introduce tu operacion :');
+    console.log(userAnswer);
+})();
